@@ -15,6 +15,116 @@
     <p>Phone: +91 9876543213</p>
 
     <a href="about.html">GO FOR MORE </a>
+
+    ```html
+<!DOCTYPE html>
+<html>
+<head>
+<title>Student Registration Form</title>
+
+<style>
+
+body{
+    font-family: Arial;
+    background-color:#e6f2ff;
+}
+
+.container{
+    width:450px;
+    margin:auto;
+    background:white;
+    padding:25px;
+    border-radius:8px;
+}
+
+h2{
+    text-align:center;
+}
+
+input,select,textarea{
+    width:100%;
+    padding:8px;
+    margin-top:5px;
+    margin-bottom:10px;
+}
+
+button{
+    padding:10px;
+    width:48%;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h2>Student Registration Form</h2>
+<hr>
+
+<form>
+
+<label>Student Name *</label>
+<input type="text" placeholder="Enter student name" required>
+
+<label>Email *</label>
+<input type="email" placeholder="Enter email" required>
+
+<label>Date of Birth *</label>
+<input type="date" required>
+
+<label>Gender *</label><br>
+<input type="radio" name="gender"> Male
+<input type="radio" name="gender"> Female
+<input type="radio" name="gender"> Other
+<br><br>
+
+<label>Department *</label>
+<select required>
+<option value="">--Select Department--</option>
+<option>CSE</option>
+<option>ECE</option>
+<option>IS</option>
+<option>AIML</option>
+<option>MECH</option>
+<option>EEE</option>
+</select>
+
+<label>Semester *</label>
+<select>
+<option>1</option>
+<option>2</option>
+<option>3</option>
+<option>4</option>
+<option>5</option>
+<option>6</option>
+<option>7</option>
+<option>8</option>
+</select>
+
+<label>Phone Number *</label>
+<input type="tel" placeholder="Enter phone number" required>
+
+<label>Address *</label>
+<textarea rows="3" placeholder="Enter address"></textarea>
+
+<label>Upload ID Card</label>
+<input type="file">
+
+<br>
+
+<button type="submit">Register</button>
+<button type="reset">Reset</button>
+
+</form>
+
+</div>
+
+</body>
+</html>
+
 </body>
 
 </html>
